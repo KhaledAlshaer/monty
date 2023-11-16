@@ -28,6 +28,8 @@ int line_proccessing(stack_t **stack, char *line, unsigned int line_number)
 		pop(stack, line_number);
 	else if (strcmp(token, "nop") == 0)
 		nop(stack, line_number);
+	else if (strcmp(token, "add") == 0)
+		add(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%u>: unknown instruction %s\n", line_number, token);
@@ -58,7 +60,6 @@ int is_valid_num(char *token)
 
 	return (1);
 }
-
 
 /**
  * trim- removing the leading and ending spaces
