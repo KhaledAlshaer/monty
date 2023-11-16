@@ -6,6 +6,7 @@
  *@line_number: this is a vraiable
  *Return: return 0
 */
+
 void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
