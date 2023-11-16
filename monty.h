@@ -48,6 +48,7 @@ void destroy_stack(stack_t **stack);
 
 void trim(char *str);
 void nop(stack_t **stack, unsigned int line_number);
+int is_valid_num(char *token);
 int line_proccessing(stack_t **stack, char *line, unsigned int line_index);
 
 #endif
