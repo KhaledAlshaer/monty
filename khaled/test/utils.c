@@ -24,8 +24,6 @@ int line_proccessing(stack_t **stack, char *line, unsigned int line_number)
 		pall(stack, line_number);
 	else if (strcmp(token, "pint") == 0)
 		pint(stack, line_number);
-	else if (strcmp(token, "pop") == 0)
-		pop(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%u>: unknown instruction %s\n", line_number, token);
@@ -36,7 +34,7 @@ int line_proccessing(stack_t **stack, char *line, unsigned int line_number)
 }
 
 /**
- * is_valid_num - check weather the token is valid
+ * is_valid_token: check weather the token is valid
  * @token: the token
  * Return: 1 Valid, 0 Not Valid
 */
@@ -46,17 +44,15 @@ int is_valid_num(char *token)
 	size_t i;
 
 	if (token == NULL || *token == '\0')
-		return (0);
+		return 0;
 
-	for (i = 0; i < strlen(token); i++)
-	{
+	for (i = 0; i < strlen(token); i++) {
 		if (!isdigit(token[i]))
 			return (0);
 	}
 
 	return (1);
 }
-
 
 /**
  * trim- removing the leading and ending spaces

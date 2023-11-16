@@ -42,12 +42,11 @@ extern stack_t *head;
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
-void pop(stack_t **stack, unsigned int line_number);
 
 void destroy_stack(stack_t **stack);
 
-void trim(char *str);
-int is_valid_num(char *token);
 int line_proccessing(stack_t **stack, char *line, unsigned int line_index);
+int is_valid_num(char *token);
+void trim(char *str);
 
 #endif
