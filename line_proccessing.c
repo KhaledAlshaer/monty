@@ -27,10 +27,13 @@ int line_proccessing(stack_t **stack, char *line, unsigned int line_number)
 	else if (*token == '#' || token[0] == '#')
 		return (1);
 
-	while (ops[i].opcode && *token)
+	while (ops[i].opcode && token)
 	{
-		if (strcmp(ops[i].opcode, token) == 0)
+		if (strcmp(token, ops[i].opcode) == 0)
+		{
 			ops[i].f(stack, line_number);
+			return (1);
+		}
 		i++;
 	}
 
