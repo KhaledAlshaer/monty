@@ -22,14 +22,10 @@ void pstr(stack_t **stack, unsigned int line_number)
 
 	while (temp)
 	{
-		if (temp->n > 127 || temp->n < 0)
-		{
-			destroy_stack(stack);
-			exit(1);
-		}
-		else
-			putchar(temp->n);
+		if (temp->n > 127 || temp->n <= 0)
+			break;
 
+		putchar(temp->n);
 		temp = temp->next;
 	}
 
