@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *pop - this is the function
- *@stack: this is a vraiable
- *@line_number: this is a vraiable
- *Return: return 0
+ * pop- this is the function
+ * @stack: this is a vraiable
+ * @line_number: this is a vraiable
+ * Return: Nothing
 */
 
 void pop(stack_t **stack, unsigned int line_number)
