@@ -32,10 +32,12 @@ int  main(int argc, char *argv[])
 			while (fgets(line, sizeof(line), file) != NULL)
 			{
 				trim(line);
-				line_proccessing(&head, line, line_number);
-                destroy_stack(&head);
-                fclose(file);
-                exit(EXIT_FAILURE);
+				if (line_proccessing(&head, line, line_number) == 0)
+				{
+					destroy_stack(&head);
+					fclose(file);
+					exit(EXIT_FAILURE);
+				}
 				line_number++;
 			}
 		}
