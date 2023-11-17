@@ -20,13 +20,18 @@ void pstr(stack_t **stack, unsigned int line_number)
 
 	temp = *stack;
 
-	while (temp && (temp->n <= 127 && temp->n > 0))
+	while (temp)
 	{
-		putchar(temp->n);
+		if (temp->n > 127 || temp->n < 0)
+		{
+			destroy_stack(stack);
+			exit(1);
+		}
+		else
+			putchar(temp->n);
+
 		temp = temp->next;
 	}
 
 	putchar('\n');
-	destroy_stack(stack);
-	exit(EXIT_FAILURE);
 }
