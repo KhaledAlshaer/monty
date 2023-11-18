@@ -9,5 +9,5 @@ Monty Project:
 
 - we just build some functions to create and manipulate a stack.
 
-- functions u can add to montys' files:
+- functions added to montys' project:
   push, pall, pint, pop, nop, swap, add, sub, mod, mul, div, pchar, pstr
