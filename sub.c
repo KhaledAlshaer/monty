@@ -4,7 +4,7 @@
  * sub- this is the function
  * @stack: this is a vraiable
  * @line_number: this is a vraiable
- * Return: Nothing
+ * Return: Nothing.
 */
 
 void sub(stack_t **stack, unsigned int line_number)

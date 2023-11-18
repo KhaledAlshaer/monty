@@ -2,7 +2,7 @@
 
 /**
  * destroy_stack- freeing the stack
- * @stack: the stack header
+ * @stack: the stack header.
 */
 
 void destroy_stack(stack_t **stack)

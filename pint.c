@@ -4,6 +4,7 @@
  * pint- print the heading node value
  * @stack: the stack header
  * @line_number: the current line index
+ * Return: Nothing.
 */
 
 void pint(stack_t **stack, unsigned int line_number)

@@ -4,7 +4,7 @@
  * pop- this is the function
  * @stack: this is a vraiable
  * @line_number: this is a vraiable
- * Return: Nothing
+ * Return: Nothing.
 */
 
 void pop(stack_t **stack, unsigned int line_number)

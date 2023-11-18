@@ -4,7 +4,7 @@
  * pchar- printing the head value as char
  * @stack: this is a vraiable
  * @line_number: this is a vraiable
- * Return: Nothing
+ * Return: Nothing.
 */
 
 void pchar(stack_t **stack, unsigned int line_number)

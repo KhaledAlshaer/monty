@@ -3,7 +3,7 @@
 /**
  * trim- removing the leading and ending spaces
  * @str: the string
- * Return: Nothing
+ * Return: Nothing.
 */
 
 void trim(char *str)

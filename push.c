@@ -4,6 +4,7 @@
  * push- pushing nodes
  * @stack: the stack header
  * @line_number: the current line index
+ * Return: Nothing
 */
 
 void push(stack_t **stack, unsigned int line_number)

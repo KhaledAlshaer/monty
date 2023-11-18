@@ -4,7 +4,7 @@
  * swap- swaping values of two nodes
  * @stack: the stack header
  * @line_number: the line index
- * Return: Nothing
+ * Return: Nothing.
 */
 
 void swap(stack_t **stack, unsigned int line_number)

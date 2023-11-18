@@ -5,7 +5,7 @@
  * @line: the line
  * @line_number: index of the line
  * @stack: the stack header
- * Return: Nothing
+ * Return: Nothing.
 */
 
 int line_proccessing(stack_t **stack, char *line, unsigned int line_number)
