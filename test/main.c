@@ -3,7 +3,7 @@
 /**
  * main- the entry point.
  * @argc: the arguments count.
- * @argv: the arguments vector
+ * @argv: the arguments vector.
  * Return: 0 successful
 */
 
