@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * push- pushing nodes
+ * push- pushing nodes.
  * @stack: the stack header
  * @line_number: the current line index
 */
