@@ -2,7 +2,7 @@
 
 /**
  * push- pushing nodes.
- * @stack: the stack header
+ * @stack: the stack header.
  * @line_number: the current line index
 */
 
